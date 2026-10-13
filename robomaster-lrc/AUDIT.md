@@ -282,6 +282,24 @@ adaptateur « RoboMaster SDK »), développée et testée sur le simulateur (ét
 branchée sur un **EP** (option B) — ou sur un S1 débloqué si vous choisissez l'option C en
 connaissance de cause. L'option A reste utilisable en parallèle pour valider la liaison radio.
 
+### 10.1 Décision enregistrée — 2026-10-13 : **option A**
+
+Le pilotage et la vidéo du robot restent assurés par l'**application officielle DJI
+RoboMaster**, en mode « Connection via Router », à travers le pont radio. Notre logiciel
+**n'envoie aucune commande au robot** et **n'affiche pas sa vidéo**.
+
+Conséquences sur le périmètre :
+
+| Module | Ce qui reste faisable avec l'option A |
+|---|---|
+| Dashboard | ✅ Entièrement : état de la liaison, des équipements, alertes, historique. L'« état du robot » se limite à sa **joignabilité réseau** (ping, présence ARP/DHCP) : aucune télémétrie interne. |
+| Network Monitor | ✅ Entièrement (cœur du logiciel avec l'option A). |
+| Video Manager | 🟡 Pas d'affichage. Possible : **mesure passive** du débit échangé entre le robot et l'appareil où tourne l'app (compteurs SNMP du switch/AP ou capture locale) → débit, interruptions, temps de reprise. Les images perdues et le délai d'affichage ne sont **pas** mesurables. |
+| Robot Controller | ⛔ Pas d'adaptateur réel. Seul le **simulateur** existe, pour développer et tester l'interface sans matériel. L'interface `RobotAdapter` est conservée pour pouvoir passer plus tard aux options B ou C. |
+| Safety Manager | 🟡 Ne peut **pas arrêter le robot réel**. Rôle : détecter la perte de liaison, alerter l'opérateur (son, bandeau), journaliser. Le comportement du robot sur perte de liaison est celui du firmware DJI (❓ à observer et documenter lors des essais). |
+
+Étape 5 (pilotage réel) : **non applicable** tant que l'option A est retenue.
+
 ## 11. Sources
 
 Officielles :

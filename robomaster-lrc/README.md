@@ -24,13 +24,19 @@ Supervision et pilotage à distance d'un DJI RoboMaster via une liaison radio IP
    PIRE ≤ 1 W avec TPC, DFS) avec antennes directives, en visibilité directe. Aucune distance
    n'est garantie avant essais.
 
+## Décision retenue : option A
+
+Le robot est piloté par l'**application officielle DJI** à travers le pont radio. Ce logiciel
+**supervise** la liaison (latence, pertes, débit, interruptions, disponibilité des équipements)
+et **ne commande pas** le robot. Voir `AUDIT.md` §10.1.
+
 ## Feuille de route
 
 | Étape | Contenu | État |
 |---|---|---|
-| 1 | Audit matériel et interfaces DJI | ✅ Rédigé (en attente de validation) |
+| 1 | Audit matériel et interfaces DJI | ✅ Rédigé — **option A retenue** (AUDIT §10.1) |
 | 2 | Architecture réseau réaliste + liste matériel | 🟡 Proposition dans `ARCHITECTURE.md` |
-| 3 | Interface + simulateur | ⏳ |
-| 4 | Supervision réseau + gestionnaire vidéo | ⏳ |
-| 5 | Pilotage réel (si interface confirmée) | ⛔ bloqué par la décision AUDIT §10 |
+| 3 | Interface + simulateur (le simulateur ne pilote jamais le robot réel) | ⏳ |
+| 4 | Supervision réseau + mesure passive du trafic vidéo de l'app DJI | ⏳ |
+| 5 | Pilotage réel | ➖ Non applicable avec l'option A (pilotage par l'app DJI officielle) |
 | 6 | Tests et résultats | ⏳ |

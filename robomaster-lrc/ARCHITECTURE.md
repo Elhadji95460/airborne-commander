@@ -100,7 +100,20 @@ flowchart LR
 | Découverte | robot → broadcast | UDP 40926/40927 | Inutile si IP fixe |
 | Sondes supervision | PC → équipements | ICMP, SNMPv3 (UDP 161) | Basse |
 
-## 5. Architecture logicielle (aperçu — étape 3)
+## 5. Option A retenue — rôle des appareils
+
+- **Appareil de pilotage** : l'application DJI RoboMaster tourne sur le PC opérateur (version
+  Windows, ❓ à confirmer pour votre version) ou sur une tablette/smartphone raccordé au VLAN 20
+  côté opérateur (par ex. via un petit point d'accès local, ❓ à étudier). Elle doit être sur le
+  **même domaine de broadcast** que le robot → pont radio en couche 2 obligatoire.
+- **Configuration initiale du robot** (QR code « Connection via Router ») : à faire **sur le site
+  du robot**, avec l'appareil de l'app à proximité, avant de démarrer les essais distants.
+- **Logiciel de supervision** : sur le PC opérateur ; sondes vers radios, switch, AP et robot ;
+  lecture SNMPv3 en lecture seule des compteurs ; aucune action sur le robot.
+- ❓ L'app DJI peut nécessiter Internet (compte, mises à jour) : prévoir de l'utiliser hors du
+  réseau de contrôle pour ces opérations plutôt que d'ouvrir le VLAN 20.
+
+## 5bis. Architecture logicielle (aperçu — étape 3)
 
 ```
 ┌──────────────── Navigateur (TypeScript) ───────────────┐
@@ -113,8 +126,8 @@ flowchart LR
 │                 arrêt sur perte de liaison, ré-armement manuel)         │
 │ Robot Controller ──► interface RobotAdapter                             │
 │      ├── SimulatorAdapter     (mode simulation : aucun accès réseau)    │
-│      └── RoboMasterSdkAdapter (activé seulement après validation)       │
-│ Video Manager  (flux réel uniquement ; « indisponible » sinon)          │
+│      └── (adaptateur réel : AUCUN avec l'option A)                     │
+│ Video Manager  (option A : mesure passive du trafic, pas d'affichage)   │
 │ Network Monitor (ICMP/TCP/SNMP, débit, pertes, interruptions)           │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
