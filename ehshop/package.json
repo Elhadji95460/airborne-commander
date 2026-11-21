@@ -1,0 +1,13 @@
+{
+  "name": "ehshop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Boutique EHSHOP — site statique pré-rendu, sans dépendance.",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "start": "node build.mjs && node scripts/serve.mjs"
+  }
+}

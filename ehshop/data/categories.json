@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "compacts-batteries",
+    "name": "Compacts & batteries",
+    "short": "Compacts",
+    "description": "Des feux d'artifice en un seul allumage : une mèche, une séquence complète.",
+    "art": { "hue": 28, "style": "burst" }
+  },
+  {
+    "slug": "fusees",
+    "name": "Fusées",
+    "short": "Fusées",
+    "description": "Montée en altitude et éclatement dans le ciel, pour les grands espaces dégagés.",
+    "art": { "hue": 8, "style": "rocket" }
+  },
+  {
+    "slug": "chandelles-romaines",
+    "name": "Chandelles romaines",
+    "short": "Chandelles",
+    "description": "Une succession de bombettes tirées à la verticale, coup après coup.",
+    "art": { "hue": 340, "style": "candle" }
+  },
+  {
+    "slug": "fontaines-effets-sol",
+    "name": "Fontaines & effets au sol",
+    "short": "Fontaines",
+    "description": "Gerbes, étincelles et effets posés au sol, à regarder de près.",
+    "art": { "hue": 44, "style": "fountain" }
+  },
+  {
+    "slug": "petits-artifices",
+    "name": "Petits artifices",
+    "short": "Petits artifices",
+    "description": "Cierges magiques, effets de table et articles de catégorie F1.",
+    "art": { "hue": 52, "style": "sparkler" }
+  },
+  {
+    "slug": "accessoires",
+    "name": "Accessoires & sécurité",
+    "short": "Accessoires",
+    "description": "Allumage, protection et matériel pour tirer dans de bonnes conditions.",
+    "art": { "hue": 210, "style": "gear" }
+  }
+]

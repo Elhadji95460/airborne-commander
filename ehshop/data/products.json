@@ -1,0 +1,201 @@
+{
+  "_comment": "CATALOGUE DE DÉMONSTRATION. Noms, prix, caractéristiques et stocks sont fictifs et servent uniquement à montrer la mise en page. Tant que demo vaut true, un bandeau l'indique sur toutes les pages. Remplacez ces entrées par vos produits réels (données issues des étiquettes et fiches fabricant), puis passez demo à false.",
+  "demo": true,
+  "products": [
+    {
+      "slug": "compact-aurore-25",
+      "name": "Compact Aurore",
+      "category": "compacts-batteries",
+      "price": 39.9,
+      "availability": "in_stock",
+      "featured": true,
+      "isNew": true,
+      "summary": "Compact de démonstration : une séquence dorée et rouge en un seul allumage.",
+      "description": "Fiche de démonstration. Décrivez ici l'effet réel du produit tel qu'indiqué par le fabricant : couleurs, rythme, final. Évitez les superlatifs : la clarté rassure davantage.",
+      "regulatory": { "class": "F2", "minAge": 16, "nec": 180, "ceRef": null, "manufacturer": null },
+      "specs": [
+        { "label": "Nombre de coups", "value": "25" },
+        { "label": "Calibre", "value": "20 mm" },
+        { "label": "Durée indicative", "value": "30 s" }
+      ],
+      "art": { "hue": 34, "hue2": 4 }
+    },
+    {
+      "slug": "compact-meridien-49",
+      "name": "Compact Méridien",
+      "category": "compacts-batteries",
+      "price": 79,
+      "availability": "in_stock",
+      "featured": true,
+      "summary": "Compact de démonstration en éventail, alternance de comètes et de crépitants.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": { "class": "F3", "minAge": 18, "nec": 950, "ceRef": null, "manufacturer": null },
+      "specs": [
+        { "label": "Nombre de coups", "value": "49" },
+        { "label": "Calibre", "value": "25 mm" },
+        { "label": "Tir", "value": "Éventail" }
+      ],
+      "art": { "hue": 48, "hue2": 200 }
+    },
+    {
+      "slug": "compact-nocturne-100",
+      "name": "Compact Nocturne",
+      "category": "compacts-batteries",
+      "price": 149,
+      "availability": "low_stock",
+      "featured": true,
+      "summary": "Compact de démonstration à grand nombre de coups pour un final soutenu.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": { "class": "F3", "minAge": 18, "nec": 1990, "ceRef": null, "manufacturer": null },
+      "specs": [
+        { "label": "Nombre de coups", "value": "100" },
+        { "label": "Calibre", "value": "30 mm" },
+        { "label": "Durée indicative", "value": "60 s" }
+      ],
+      "art": { "hue": 280, "hue2": 40 }
+    },
+    {
+      "slug": "fusees-zenith-lot-6",
+      "name": "Fusées Zénith — lot de 6",
+      "category": "fusees",
+      "price": 24.5,
+      "availability": "in_stock",
+      "featured": true,
+      "summary": "Lot de démonstration de six fusées à baguette, éclatements colorés.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": { "class": "F2", "minAge": 16, "nec": 120, "ceRef": null, "manufacturer": null },
+      "specs": [
+        { "label": "Contenu", "value": "6 fusées" },
+        { "label": "Mise en œuvre", "value": "Rampe ou tube de lancement" }
+      ],
+      "art": { "hue": 8, "hue2": 210 }
+    },
+    {
+      "slug": "fusees-altair-lot-3",
+      "name": "Fusées Altaïr — lot de 3",
+      "category": "fusees",
+      "price": 34,
+      "availability": "out_of_stock",
+      "summary": "Lot de démonstration de trois fusées de plus gros calibre.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": { "class": "F3", "minAge": 18, "nec": 300, "ceRef": null, "manufacturer": null },
+      "specs": [
+        { "label": "Contenu", "value": "3 fusées" }
+      ],
+      "art": { "hue": 190, "hue2": 330 }
+    },
+    {
+      "slug": "chandelle-cascade-10",
+      "name": "Chandelle Cascade",
+      "category": "chandelles-romaines",
+      "price": 12.9,
+      "availability": "in_stock",
+      "isNew": true,
+      "summary": "Chandelle romaine de démonstration, dix bombettes successives.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": { "class": "F2", "minAge": 16, "nec": 60, "ceRef": null, "manufacturer": null },
+      "specs": [
+        { "label": "Nombre de coups", "value": "10" }
+      ],
+      "art": { "hue": 330, "hue2": 50 }
+    },
+    {
+      "slug": "chandelles-duo-lot-4",
+      "name": "Chandelles Duo — lot de 4",
+      "category": "chandelles-romaines",
+      "price": 29,
+      "availability": "in_stock",
+      "featured": true,
+      "summary": "Lot de démonstration de quatre chandelles aux couleurs alternées.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": { "class": "F2", "minAge": 16, "nec": 220, "ceRef": null, "manufacturer": null },
+      "specs": [
+        { "label": "Contenu", "value": "4 chandelles" }
+      ],
+      "art": { "hue": 120, "hue2": 300 }
+    },
+    {
+      "slug": "fontaine-sirocco",
+      "name": "Fontaine Sirocco",
+      "category": "fontaines-effets-sol",
+      "price": 9.9,
+      "availability": "in_stock",
+      "featured": true,
+      "summary": "Fontaine de démonstration, gerbe dorée posée au sol.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": { "class": "F2", "minAge": 16, "nec": 50, "ceRef": null, "manufacturer": null },
+      "specs": [
+        { "label": "Durée indicative", "value": "40 s" }
+      ],
+      "art": { "hue": 42, "hue2": 20 }
+    },
+    {
+      "slug": "fontaines-lot-3-prisme",
+      "name": "Fontaines Prisme — lot de 3",
+      "category": "fontaines-effets-sol",
+      "price": 19.9,
+      "availability": "in_stock",
+      "isNew": true,
+      "summary": "Lot de démonstration de trois fontaines colorées.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": { "class": "F2", "minAge": 16, "nec": 120, "ceRef": null, "manufacturer": null },
+      "specs": [
+        { "label": "Contenu", "value": "3 fontaines" }
+      ],
+      "art": { "hue": 160, "hue2": 330 }
+    },
+    {
+      "slug": "cierges-magiques-lot-10",
+      "name": "Cierges magiques — lot de 10",
+      "category": "petits-artifices",
+      "price": 4.5,
+      "availability": "in_stock",
+      "featured": true,
+      "summary": "Lot de démonstration de cierges magiques classiques.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": { "class": "F1", "minAge": 12, "nec": 10, "ceRef": null, "manufacturer": null },
+      "specs": [
+        { "label": "Contenu", "value": "10 cierges" }
+      ],
+      "art": { "hue": 50, "hue2": 40 }
+    },
+    {
+      "slug": "effets-de-table-assortiment",
+      "name": "Effets de table — assortiment",
+      "category": "petits-artifices",
+      "price": 7.9,
+      "availability": "in_stock",
+      "summary": "Assortiment de démonstration d'articles de table de catégorie F1.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": { "class": "F1", "minAge": 12, "nec": 5, "ceRef": null, "manufacturer": null },
+      "specs": [],
+      "art": { "hue": 300, "hue2": 200 }
+    },
+    {
+      "slug": "allumeurs-lot-5",
+      "name": "Allumeurs — lot de 5",
+      "category": "accessoires",
+      "price": 3.9,
+      "availability": "in_stock",
+      "summary": "Accessoire de démonstration pour allumer à distance de la mèche.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": null,
+      "specs": [
+        { "label": "Contenu", "value": "5 allumeurs" }
+      ],
+      "art": { "hue": 20, "hue2": 210 }
+    },
+    {
+      "slug": "lunettes-de-protection",
+      "name": "Lunettes de protection",
+      "category": "accessoires",
+      "price": 8.5,
+      "availability": "in_stock",
+      "summary": "Accessoire de démonstration : protection oculaire pour la personne qui allume.",
+      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
+      "regulatory": null,
+      "specs": [],
+      "art": { "hue": 210, "hue2": 190 }
+    }
+  ]
+}

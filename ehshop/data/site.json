@@ -1,0 +1,57 @@
+{
+  "_comment": "Toutes les valeurs null sont à compléter avec les informations réelles de l'entreprise. Le build liste ce qui manque. Aucune valeur ne doit être inventée.",
+
+  "brand": {
+    "name": "EHSHOP",
+    "tagline": "Artifices & pyrotechnie de loisir",
+    "baseUrl": "https://ehshop.net",
+    "locale": "fr_FR",
+    "currency": "EUR"
+  },
+
+  "company": {
+    "legalName": null,
+    "legalForm": null,
+    "shareCapital": null,
+    "siret": null,
+    "rcs": null,
+    "vatNumber": null,
+    "address": null,
+    "publicationDirector": null,
+    "host": {
+      "name": null,
+      "address": null,
+      "phone": null
+    }
+  },
+
+  "contact": {
+    "email": null,
+    "phone": null,
+    "hours": null,
+    "pickupAddress": null
+  },
+
+  "policy": {
+    "_comment": "Âge minimum exigé par la boutique pour passer commande, toutes catégories confondues. La réglementation fixe des minimums par catégorie (voir page Réglementation) ; la boutique peut être plus stricte.",
+    "minimumBuyerAge": 18,
+    "deliveryModes": [],
+    "deliveryZones": null,
+    "deliveryDelay": null,
+    "shippingCostInfo": null,
+    "paymentMethods": [],
+    "returnsInfo": null
+  },
+
+  "order": {
+    "_comment": "Point d'envoi des demandes de commande (POST JSON). Laisser null : la commande est alors préparée sous forme d'e-mail au service client. Brancher ici un back-office ou un prestataire de paiement (Stripe, PayPal, Shopify Buy Button…).",
+    "endpoint": null
+  },
+
+  "social": {
+    "instagram": null,
+    "facebook": null,
+    "tiktok": null,
+    "youtube": null
+  }
+}
