@@ -1,201 +1,1206 @@
 {
-  "_comment": "CATALOGUE DE DÉMONSTRATION. Noms, prix, caractéristiques et stocks sont fictifs et servent uniquement à montrer la mise en page. Tant que demo vaut true, un bandeau l'indique sur toutes les pages. Remplacez ces entrées par vos produits réels (données issues des étiquettes et fiches fabricant), puis passez demo à false.",
-  "demo": true,
+  "_comment": "Produits réels importés depuis ehshop.net (fiches SumUp). Pour modifier un produit, éditez ce fichier puis relancez npm run build. Ne renseignez que des informations figurant sur l'étiquette ou la fiche fabricant.",
+  "demo": false,
   "products": [
     {
-      "slug": "compact-aurore-25",
-      "name": "Compact Aurore",
-      "category": "compacts-batteries",
-      "price": 39.9,
+      "slug": "inferno",
+      "name": "Inferno",
+      "category": "feux-d-artifice",
+      "price": 25.0,
       "availability": "in_stock",
       "featured": true,
-      "isNew": true,
-      "summary": "Compact de démonstration : une séquence dorée et rouge en un seul allumage.",
-      "description": "Fiche de démonstration. Décrivez ici l'effet réel du produit tel qu'indiqué par le fabricant : couleurs, rythme, final. Évitez les superlatifs : la clarté rassure davantage.",
-      "regulatory": { "class": "F2", "minAge": 16, "nec": 180, "ceRef": null, "manufacturer": null },
+      "summary": "Inferno, compact de feux d'artifice F2 : 25 coups en calibre 20 mm, durée env. 25 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Inferno est un compact F2 de 25 coups en calibre 20 mm, durée env. 25 s, masse active 155,5 g. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": "155,5",
+        "ceRef": null,
+        "manufacturer": null
+      },
       "specs": [
-        { "label": "Nombre de coups", "value": "25" },
-        { "label": "Calibre", "value": "20 mm" },
-        { "label": "Durée indicative", "value": "30 s" }
+        {
+          "label": "Nombre de coups",
+          "value": "25"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "25 s"
+        }
       ],
-      "art": { "hue": 34, "hue2": 4 }
+      "image": "/assets/img/produits/inferno.webp",
+      "thumb": "/assets/img/produits/inferno-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/inferno"
     },
     {
-      "slug": "compact-meridien-49",
-      "name": "Compact Méridien",
-      "category": "compacts-batteries",
-      "price": 79,
+      "slug": "tg240",
+      "name": "TG240",
+      "category": "feux-d-artifice",
+      "price": 30.0,
       "availability": "in_stock",
       "featured": true,
-      "summary": "Compact de démonstration en éventail, alternance de comètes et de crépitants.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
-      "regulatory": { "class": "F3", "minAge": 18, "nec": 950, "ceRef": null, "manufacturer": null },
+      "summary": "TG240, batterie de feux d'artifice F2 de 240 coups en calibre 12 x 12,75 mm, environ 35 s de tir continu, format 435 x 85 mm. Réservé aux +18 ans.",
+      "description": "- TG240 est une batterie F2 de 240 coups, calibre 12 x 12,75 mm, pour environ 35 secondes de tir. Posez-la sur un sol plat et dur, en extérieur, loin du public et des habitations. Allumez à bout de bras, reculez aussitôt et ne revenez pas sur une batterie qui n'a pas fonctionné. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
       "specs": [
-        { "label": "Nombre de coups", "value": "49" },
-        { "label": "Calibre", "value": "25 mm" },
-        { "label": "Tir", "value": "Éventail" }
+        {
+          "label": "Nombre de coups",
+          "value": "240"
+        },
+        {
+          "label": "Calibre",
+          "value": "12 × 12,75 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "35 s"
+        },
+        {
+          "label": "Format",
+          "value": "435 × 85 mm"
+        }
       ],
-      "art": { "hue": 48, "hue2": 200 }
+      "image": "/assets/img/produits/tg240.webp",
+      "thumb": "/assets/img/produits/tg240-480.webp",
+      "imageBg": "#fffdf9",
+      "source": "https://ehshop.net/product/tg240"
     },
     {
-      "slug": "compact-nocturne-100",
-      "name": "Compact Nocturne",
-      "category": "compacts-batteries",
-      "price": 149,
-      "availability": "low_stock",
-      "featured": true,
-      "summary": "Compact de démonstration à grand nombre de coups pour un final soutenu.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
-      "regulatory": { "class": "F3", "minAge": 18, "nec": 1990, "ceRef": null, "manufacturer": null },
+      "slug": "congele",
+      "name": "Congelé",
+      "category": "feux-d-artifice",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Congelé, compact de feux d'artifice F2 : 16 coups en calibre 20 mm. Un seul allumage pour tout le bouquet. Vente réservée aux plus de 18 ans.",
+      "description": "Congelé est un compact F2 de 16 coups en calibre 20 mm. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
       "specs": [
-        { "label": "Nombre de coups", "value": "100" },
-        { "label": "Calibre", "value": "30 mm" },
-        { "label": "Durée indicative", "value": "60 s" }
+        {
+          "label": "Nombre de coups",
+          "value": "16"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        }
       ],
-      "art": { "hue": 280, "hue2": 40 }
+      "image": "/assets/img/produits/congele.webp",
+      "thumb": "/assets/img/produits/congele-480.webp",
+      "imageBg": "#fffdf9",
+      "source": "https://ehshop.net/product/congele"
     },
     {
-      "slug": "fusees-zenith-lot-6",
-      "name": "Fusées Zénith — lot de 6",
-      "category": "fusees",
-      "price": 24.5,
+      "slug": "gugus",
+      "name": "Gugus",
+      "category": "feux-d-artifice",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Gugus, compact de feux d'artifice F2 : 7 coups en calibre 20 mm, durée env. 10 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Gugus est un compact F2 de 7 coups en calibre 20 mm, durée env. 10 s, masse active 38,5 g. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": "38,5",
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "7"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "10 s"
+        }
+      ],
+      "image": "/assets/img/produits/gugus.webp",
+      "thumb": "/assets/img/produits/gugus-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/gugus"
+    },
+    {
+      "slug": "macrocosmos",
+      "name": "Macrocosmos",
+      "category": "feux-d-artifice",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Macrocosmos, compact de feux d'artifice F2 : 10 coups en calibre 20 mm, durée env. 15 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Macrocosmos est un compact F2 de 10 coups en calibre 20 mm, durée env. 15 s, masse active 100 g. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": "100",
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "10"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "15 s"
+        }
+      ],
+      "image": "/assets/img/produits/macrocosmos.webp",
+      "thumb": "/assets/img/produits/macrocosmos-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/macrocosmos"
+    },
+    {
+      "slug": "major",
+      "name": "Major",
+      "category": "feux-d-artifice",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Major, compact de feux d'artifice F2 : 9 coups en calibre 20 mm, durée env. 15 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Major est un compact F2 de 9 coups en calibre 20 mm, durée env. 15 s, masse active 72 g. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": "72",
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "9"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "15 s"
+        }
+      ],
+      "image": "/assets/img/produits/major.webp",
+      "thumb": "/assets/img/produits/major-480.webp",
+      "imageBg": "#fffdf9",
+      "source": "https://ehshop.net/product/major"
+    },
+    {
+      "slug": "mars",
+      "name": "Mars",
+      "category": "feux-d-artifice",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Mars, compact de feux d'artifice F2 : 16 coups en calibre 20 mm. Un seul allumage pour tout le bouquet. Livraison en France. Vente réservée aux +18 ans.",
+      "description": "Mars est un compact F2 de 16 coups en calibre 20 mm. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "16"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        }
+      ],
+      "image": "/assets/img/produits/mars.webp",
+      "thumb": "/assets/img/produits/mars-480.webp",
+      "imageBg": "#fffdf9",
+      "source": "https://ehshop.net/product/mars"
+    },
+    {
+      "slug": "optic",
+      "name": "Optic",
+      "category": "feux-d-artifice",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Optic, compact de feux d'artifice F2 : 9 coups en calibre 20 mm, durée env. 15 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Optic est un compact F2 de 9 coups en calibre 20 mm, durée env. 15 s, masse active 63 g. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": "63",
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "9"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "15 s"
+        }
+      ],
+      "image": "/assets/img/produits/optic.webp",
+      "thumb": "/assets/img/produits/optic-480.webp",
+      "imageBg": "#fefefe",
+      "source": "https://ehshop.net/product/optic"
+    },
+    {
+      "slug": "shark-attack",
+      "name": "Shark Attack",
+      "category": "feux-d-artifice",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Shark Attack, compact de feux d'artifice F2 : 9 coups en calibre 18 mm, durée env. 10 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Shark Attack est un compact F2 de 9 coups en calibre 18 mm, durée env. 10 s, masse active 38,5 g. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": "38,5",
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "9"
+        },
+        {
+          "label": "Calibre",
+          "value": "18 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "10 s"
+        }
+      ],
+      "image": "/assets/img/produits/shark-attack.webp",
+      "thumb": "/assets/img/produits/shark-attack-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/shark-attack"
+    },
+    {
+      "slug": "hnusak",
+      "name": "Hnusak",
+      "category": "feux-d-artifice",
+      "price": 10.67,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Hnusak, compact de feux d'artifice F2 : 16 coups en calibre 20 mm. Un seul allumage pour tout le bouquet. Vente réservée aux plus de 18 ans.",
+      "description": "Hnusak est un compact F2 de 16 coups en calibre 20 mm. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "16"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        }
+      ],
+      "image": "/assets/img/produits/hnusak.webp",
+      "thumb": "/assets/img/produits/hnusak-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/hnusak"
+    },
+    {
+      "slug": "magic",
+      "name": "Magic",
+      "category": "feux-d-artifice",
+      "price": 15.74,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Magic, compact de feux d'artifice F2 : 16 coups en calibre 20 mm, durée env. 20 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Magic est un compact F2 de 16 coups en calibre 20 mm, durée env. 20 s, masse active 100,8 g. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": "100,8",
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "16"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "20 s"
+        }
+      ],
+      "image": "/assets/img/produits/magic.webp",
+      "thumb": "/assets/img/produits/magic-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/magic"
+    },
+    {
+      "slug": "pyro-zone",
+      "name": "Pyro zone",
+      "category": "feux-d-artifice",
+      "price": 20.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Pyro zone, compact de feux d'artifice F2 : 15 coups en calibre 20 mm, durée env. 25 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Pyro zone est un compact F2 de 15 coups en calibre 20 mm, durée env. 25 s, masse active 105 g. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": "105",
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "15"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "25 s"
+        }
+      ],
+      "image": "/assets/img/produits/pyro-zone.webp",
+      "thumb": "/assets/img/produits/pyro-zone-480.webp",
+      "imageBg": "#fffdf9",
+      "source": "https://ehshop.net/product/pyro-zone"
+    },
+    {
+      "slug": "illusion",
+      "name": "Illusion",
+      "category": "feux-d-artifice",
+      "price": 20.52,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Illusion, compact de feux d'artifice F2 : 25 coups en calibre 20 mm. Un seul allumage pour tout le bouquet. Vente réservée aux plus de 18 ans.",
+      "description": "Illusion est un compact F2 de 25 coups en calibre 20 mm. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "25"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        }
+      ],
+      "image": "/assets/img/produits/illusion.webp",
+      "thumb": "/assets/img/produits/illusion-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/illusion"
+    },
+    {
+      "slug": "born-to-rock",
+      "name": "Born To Rock",
+      "category": "feux-d-artifice",
+      "price": 20.66,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Born To Rock, compact de feux d'artifice F2 : 20 coups en calibre 20 mm, durée env. 20 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Born To Rock est un compact F2 de 20 coups en calibre 20 mm, durée env. 20 s, masse active 170 g. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": "170",
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "20"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "20 s"
+        }
+      ],
+      "image": "/assets/img/produits/born-to-rock.webp",
+      "thumb": "/assets/img/produits/born-to-rock-480.webp",
+      "imageBg": "#fffdf9",
+      "source": "https://ehshop.net/product/born-to-rock"
+    },
+    {
+      "slug": "thunder-king",
+      "name": "Thunder King",
+      "category": "feux-d-artifice",
+      "price": 21.64,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Thunder King, compact de feux d'artifice F2 : 25 coups en calibre 20 mm, durée env. 25 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Thunder King est un compact F2 de 25 coups en calibre 20 mm, durée env. 25 s, masse active 92 g. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": "92",
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "25"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "25 s"
+        }
+      ],
+      "image": "/assets/img/produits/thunder-king.webp",
+      "thumb": "/assets/img/produits/thunder-king-480.webp",
+      "imageBg": "#fffdf9",
+      "source": "https://ehshop.net/product/thunder-king"
+    },
+    {
+      "slug": "gamme-signature",
+      "name": "Gamme Signature",
+      "category": "feux-d-artifice",
+      "price": 26.46,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Gamme Signature, compact de feux d'artifice F2 : 25 coups en calibre 20 mm. Un seul allumage pour tout le bouquet. Vente réservée aux plus de 18 ans.",
+      "description": "Gamme Signature est un compact F2 de 25 coups en calibre 20 mm. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "25"
+        },
+        {
+          "label": "Calibre",
+          "value": "20 mm"
+        }
+      ],
+      "image": "/assets/img/produits/gamme-signature.webp",
+      "thumb": "/assets/img/produits/gamme-signature-480.webp",
+      "imageBg": "#fffdf9",
+      "source": "https://ehshop.net/product/gamme-signature"
+    },
+    {
+      "slug": "revolt",
+      "name": "Revolt",
+      "category": "feux-d-artifice",
+      "price": 35.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Revolt, compact de feux d'artifice F2 : 19 coups en calibre 25 mm, durée env. 35 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Revolt est un compact F2 de 19 coups en calibre 25 mm, durée env. 35 s, masse active 243 g. Posez-le à plat sur un sol dur, en extérieur, allumez la mèche à bout de bras puis reculez à la distance indiquée sur l'étiquette. Ne vous penchez jamais au-dessus et ne rallumez pas un compact qui n'est pas parti. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": "243",
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "19"
+        },
+        {
+          "label": "Calibre",
+          "value": "25 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "35 s"
+        }
+      ],
+      "image": "/assets/img/produits/revolt.webp",
+      "thumb": "/assets/img/produits/revolt-480.webp",
+      "imageBg": "#fffdf9",
+      "source": "https://ehshop.net/product/revolt"
+    },
+    {
+      "slug": "jazz-and-blues",
+      "name": "Jazz&Blues",
+      "category": "feux-d-artifice",
+      "price": 65.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Jazz&Blues, compact de feux d'artifice F3 : 25 coups en calibre 30 mm, durée env. 40 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "description": "Jazz&Blues, compact de feux d'artifice F3 : 25 coups en calibre 30 mm, durée env. 40 s. Un seul allumage pour tout le bouquet. Réservé aux +18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F3",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Nombre de coups",
+          "value": "25"
+        },
+        {
+          "label": "Calibre",
+          "value": "30 mm"
+        },
+        {
+          "label": "Durée approximative",
+          "value": "40 s"
+        }
+      ],
+      "image": "/assets/img/produits/jazz-and-blues.webp",
+      "thumb": "/assets/img/produits/jazz-and-blues-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/jazz-and-blues"
+    },
+    {
+      "slug": "balle-explosive-dumbum",
+      "name": "Balle explosive DumBum",
+      "category": "petards",
+      "price": 6.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Balle explosive DumBum, pack de 3 pièces : un crépitement brutal en une seule fois après l'allumage, effet garanti en fête. Réservé aux +18 ans.",
+      "description": "Vendue par pack de 3, la balle explosive DumBum produit un crépitement brutal en une seule fois après l'allumage. Posez-la au sol, allumez à bout de bras et éloignez-vous immédiatement. Ne la lancez jamais vers une personne. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": null,
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Contenu",
+          "value": "3 pièces"
+        }
+      ],
+      "image": "/assets/img/produits/balle-explosive-dumbum.webp",
+      "thumb": "/assets/img/produits/balle-explosive-dumbum-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/balle-explosive-dumbum"
+    },
+    {
+      "slug": "dumbum-f3",
+      "name": "DumBum F3",
+      "category": "petards",
+      "price": 7.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "DumBum F3, pétard de catégorie F3 à 0,65 g de composition flash, fabriqué en Europe, pour une détonation sèche et franche. Réservé aux +18 ans.",
+      "description": "DumBum F3 est un pétard de catégorie F3 contenant 0,65 g de composition flash. Posez-le au sol, allumez à bout de bras puis reculez. Ne le tenez jamais en main et n'utilisez que dans un espace extérieur dégagé. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F3",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Composition par pièce",
+          "value": "0,65 g"
+        }
+      ],
+      "image": "/assets/img/produits/dumbum-f3.webp",
+      "thumb": "/assets/img/produits/dumbum-f3-480.webp",
+      "imageBg": "#fdfdfd",
+      "source": "https://ehshop.net/product/dumbum-f3"
+    },
+    {
+      "slug": "bull-dog-1",
+      "name": "Bull Dog",
+      "category": "petards",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Bull Dog, pétards de catégorie F3 en paquet de 20 pièces, 2 g de composition chacun, pour une détonation puissante. Vente réservée aux plus de 18 ans.",
+      "description": "Bull Dog est un paquet de 20 pétards de catégorie F3, avec 2 g de composition par pièce. Catégorie F3 : utilisez-les en extérieur, dans un espace dégagé, à bonne distance des personnes et des habitations. Posez au sol, allumez à bout de bras et reculez sans attendre. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F3",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Contenu",
+          "value": "20 pièces"
+        },
+        {
+          "label": "Composition par pièce",
+          "value": "2 g"
+        },
+        {
+          "label": "Pays d'origine",
+          "value": "Albanie"
+        }
+      ],
+      "image": "/assets/img/produits/bull-dog-1.webp",
+      "thumb": "/assets/img/produits/bull-dog-1-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/bull-dog-1"
+    },
+    {
+      "slug": "paquet-de-20-petards",
+      "name": "Paquet de 20 pétards",
+      "category": "petards",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "20 pétards à composition flash",
+      "description": "20 pétards à composition flash",
+      "features": [],
+      "regulatory": {
+        "class": null,
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Contenu",
+          "value": "20 pétards"
+        }
+      ],
+      "image": "/assets/img/produits/paquet-de-20-petards.webp",
+      "thumb": "/assets/img/produits/paquet-de-20-petards-480.webp",
+      "imageBg": "#fdfdfd",
+      "source": "https://ehshop.net/product/paquet-de-20-petards"
+    },
+    {
+      "slug": "sachet-petard-demon-cool-selection",
+      "name": "Sachet pétards Demon Cool Sélection",
+      "category": "petards",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Sachet de pétards Demon Cool Sélection : 92 pétards assortis (Machine Gun, Super Démon, N°1, Géant) pour varier les effets. Réservé aux +18 ans.",
+      "description": "Ce sachet réunit 92 pétards Démon : 1 paquet Machine Gun, 2 paquets Super Démon, 3 paquets N°1 et 1 paquet de 8 Géant. Posez chaque pétard au sol, allumez à bout de bras et reculez. Ne les tenez jamais en main et tirez-les uniquement en extérieur. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": null,
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Contenu",
+          "value": "92 pétards assortis (Machine Gun, Super Démon, N°1, Géant)"
+        }
+      ],
+      "image": "/assets/img/produits/sachet-petard-demon-cool-selection.webp",
+      "thumb": "/assets/img/produits/sachet-petard-demon-cool-selection-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/sachet-petard-demon-cool-selection"
+    },
+    {
+      "slug": "sachet-petard-demon-maxi-cool",
+      "name": "Sachet pétards Demon Maxi Cool",
+      "category": "petards",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Sachet de pétards Demon Maxi Cool : 28 pétards, 2 paquets de 6 King Size et 2 paquets de 8 Géant, pour vos moments festifs. Réservé aux +18 ans.",
+      "description": "Ce sachet contient 28 pétards Démon : 2 paquets de 6 King Size et 2 paquets de 8 Géant. Posez chaque pétard au sol, allumez la mèche à bout de bras et éloignez-vous aussitôt. Gardez enfants et animaux à l'écart. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": null,
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Contenu",
+          "value": "28 pétards"
+        }
+      ],
+      "image": "/assets/img/produits/sachet-petard-demon-maxi-cool.webp",
+      "thumb": "/assets/img/produits/sachet-petard-demon-maxi-cool-480.webp",
+      "imageBg": "#dddad7",
+      "source": "https://ehshop.net/product/sachet-petard-demon-maxi-cool"
+    },
+    {
+      "slug": "dumbum-5g",
+      "name": "DumBum 5g",
+      "category": "petards",
+      "price": 22.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "DumBum 5g, pétards puissants en paquet de 20 pièces, 5 g de composition chacun, pour les amateurs de grosses détonations. Réservé aux +18 ans.",
+      "description": "DumBum 5g est un paquet de 20 pétards de 5 g de composition chacun. Ce sont des pétards puissants : tirez-les en extérieur, loin des personnes, des animaux et des vitres. Posez au sol, allumez à bout de bras et éloignez-vous rapidement. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": null,
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Contenu",
+          "value": "20 pièces"
+        },
+        {
+          "label": "Composition par pièce",
+          "value": "5 g"
+        },
+        {
+          "label": "Pays d'origine",
+          "value": "Albanie"
+        }
+      ],
+      "image": "/assets/img/produits/dumbum-5g.webp",
+      "thumb": "/assets/img/produits/dumbum-5g-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/dumbum-5g"
+    },
+    {
+      "slug": "jouons-a-l-ensemble",
+      "name": "Jouons à l'ensemble",
+      "category": "fusees-packs",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Ensemble F2 Jouons à l'ensemble : 5 fusées, 1 papillon, 1 paquet de pétards et 1 paquet de cierges magiques pour la soirée. Réservé aux +18 ans.",
+      "description": "Cet ensemble F2 contient 5 fusées, 1 papillon, 1 paquet de pétards et 1 paquet de cierges magiques. Tirez les fusées depuis un support vertical stable et les pétards posés au sol ; les cierges se tiennent à bout de bras, loin du visage et des vêtements. Utilisation en extérieur uniquement. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Contenu",
+          "value": "5 fusées, 1 papillon, 1 paquet de pétards, 1 paquet de cierges magiques"
+        }
+      ],
+      "image": "/assets/img/produits/jouons-a-l-ensemble.webp",
+      "thumb": "/assets/img/produits/jouons-a-l-ensemble-480.webp",
+      "imageBg": "#fdfdfd",
+      "source": "https://ehshop.net/product/jouons-a-l-ensemble"
+    },
+    {
+      "slug": "4-9-3-f2-ensemble",
+      "name": "Ensemble 4-9-3 F2",
+      "category": "fusees-packs",
+      "price": 16.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Ensemble 4-9-3 F2 : 3 fusées, 1 papillon, 2 paquets de pétards différents et 1 feu romain, un assortiment prêt pour la fête. Réservé aux +18 ans.",
+      "description": "L'ensemble 4-9-3 de catégorie F2 réunit 3 fusées, 1 papillon, 2 paquets de pétards différents et 1 feu romain. Lisez la notice de chaque article : les fusées partent d'un support vertical stable, les pétards se posent au sol. Tirez en extérieur, à distance du public. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Contenu",
+          "value": "3 fusées, 1 papillon, 2 paquets de pétards différents, 1 feu romain"
+        }
+      ],
+      "image": "/assets/img/produits/4-9-3-f2-ensemble.webp",
+      "thumb": "/assets/img/produits/4-9-3-f2-ensemble-480.webp",
+      "imageBg": "#fefefe",
+      "source": "https://ehshop.net/product/4-9-3-f2-ensemble"
+    },
+    {
+      "slug": "fire-gate-rockets-5-pieces-f2",
+      "name": "Fire Gate Rockets — 5 fusées F2",
+      "category": "fusees-packs",
+      "price": 16.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Fire Gate Rockets : lot de 5 fusées moyennes F2, étoiles scintillantes vertes, blanches et couronne avec perles colorées. Réservé aux +18 ans.",
+      "description": "Ce lot de 5 fusées moyennes F2 offre des étoiles scintillantes vertes à perles violettes, des étoiles blanches à perles rouges et une couronne scintillante à perles bleues. Placez chaque fusée dans un support vertical stable (tube ou bouteille lestée), loin de tout obstacle au-dessus. Allumez à bout de bras et reculez. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": "F2",
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Contenu",
+          "value": "5 fusées"
+        }
+      ],
+      "image": "/assets/img/produits/fire-gate-rockets-5-pieces-f2.webp",
+      "thumb": "/assets/img/produits/fire-gate-rockets-5-pieces-f2-480.webp",
+      "imageBg": "#fdfdfd",
+      "source": "https://ehshop.net/product/fire-gate-rockets-5-pieces-f2"
+    },
+    {
+      "slug": "monocoup",
+      "name": "Monocoup 37 mm — paquet de 4",
+      "category": "chandelles-monocoups",
+      "price": 20.0,
       "availability": "in_stock",
       "featured": true,
-      "summary": "Lot de démonstration de six fusées à baguette, éclatements colorés.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
-      "regulatory": { "class": "F2", "minAge": 16, "nec": 120, "ceRef": null, "manufacturer": null },
+      "summary": "Monocoup calibre 37 mm, paquet de 4 tirs uniques (masse active 140 g), plus puissant que le 30 mm, pour un départ ou un final. Réservé aux +18 ans.",
+      "description": "Ce paquet contient 4 monocoups en calibre 37 mm, pour une masse active totale de 140 g. Installez chaque tube bien droit sur un sol stable, en extérieur et loin du public. Allumez à bout de bras, éloignez-vous aussitôt et ne rallumez jamais un tube resté silencieux. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": null,
+        "minAge": 18,
+        "nec": "140",
+        "ceRef": null,
+        "manufacturer": null
+      },
       "specs": [
-        { "label": "Contenu", "value": "6 fusées" },
-        { "label": "Mise en œuvre", "value": "Rampe ou tube de lancement" }
+        {
+          "label": "Calibre",
+          "value": "37 mm"
+        },
+        {
+          "label": "Contenu",
+          "value": "4 tirs uniques"
+        }
       ],
-      "art": { "hue": 8, "hue2": 210 }
+      "image": "/assets/img/produits/monocoup.webp",
+      "thumb": "/assets/img/produits/monocoup-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/monocoup"
     },
     {
-      "slug": "fusees-altair-lot-3",
-      "name": "Fusées Altaïr — lot de 3",
-      "category": "fusees",
-      "price": 34,
+      "slug": "paquet-de-3-chandelles-20-effets",
+      "name": "Paquet de 3 chandelles 20 effets",
+      "category": "chandelles-monocoups",
+      "price": 4.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Paquet de 3 chandelles romaines à 20 effets chacune : des tirs successifs en colonne pour animer jardin, fête ou soirée. Réservé aux +18 ans.",
+      "description": "Ce paquet réunit 3 chandelles romaines de 20 effets. Plantez ou calez chaque chandelle bien droite dans le sol : elle ne se tient jamais à la main. Allumez à bout de bras, reculez et gardez le public à distance. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": null,
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Contenu",
+          "value": "3 chandelles"
+        }
+      ],
+      "image": "/assets/img/produits/paquet-de-3-chandelles-20-effets.webp",
+      "thumb": "/assets/img/produits/paquet-de-3-chandelles-20-effets-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/paquet-de-3-chandelles-20-effets"
+    },
+    {
+      "slug": "paquets-de-10-chandelles-romaines-10-effets",
+      "name": "Paquet de 10 chandelles romaines 10 effets",
+      "category": "chandelles-monocoups",
+      "price": 7.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Paquet de 10 chandelles romaines à 10 effets : de quoi faire durer la fête en tirant les chandelles l'une après l'autre. Réservé aux +18 ans.",
+      "description": "Ce paquet contient 10 chandelles romaines de 10 effets chacune. Fixez chaque chandelle à la verticale dans la terre ou un support stable, jamais tenue en main ni pointée vers quelqu'un. Allumez à bout de bras et éloignez-vous aussitôt. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": null,
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Contenu",
+          "value": "10 chandelles"
+        }
+      ],
+      "image": "/assets/img/produits/paquets-de-10-chandelles-romaines-10-effets.webp",
+      "thumb": "/assets/img/produits/paquets-de-10-chandelles-romaines-10-effets-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/paquets-de-10-chandelles-romaines-10-effets"
+    },
+    {
+      "slug": "monocoup-1",
+      "name": "Monocoup 30 mm — paquet de 4",
+      "category": "chandelles-monocoups",
+      "price": 20.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Monocoup calibre 30 mm, paquet de 4 tirs uniques (masse active 69 g) pour ouvrir ou conclure votre spectacle de feux d'artifice. Réservé aux +18 ans.",
+      "description": "Ce paquet contient 4 monocoups en calibre 30 mm, pour une masse active totale de 69 g. Chaque monocoup envoie un seul tir : il se pose à la verticale sur un sol dur, calé si besoin. Allumez à bout de bras, reculez immédiatement et ne vous placez jamais au-dessus du tube. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": null,
+        "minAge": 18,
+        "nec": "69",
+        "ceRef": null,
+        "manufacturer": null
+      },
+      "specs": [
+        {
+          "label": "Calibre",
+          "value": "30 mm"
+        },
+        {
+          "label": "Contenu",
+          "value": "4 tirs uniques"
+        }
+      ],
+      "image": "/assets/img/produits/monocoup-1.webp",
+      "thumb": "/assets/img/produits/monocoup-1-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/monocoup-1"
+    },
+    {
+      "slug": "paquet-de-4-fumigenes-multi-couleurs",
+      "name": "Paquet de 4 fumigènes multicolores",
+      "category": "fumigenes-torches",
+      "price": 10.0,
       "availability": "out_of_stock",
-      "summary": "Lot de démonstration de trois fusées de plus gros calibre.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
-      "regulatory": { "class": "F3", "minAge": 18, "nec": 300, "ceRef": null, "manufacturer": null },
-      "specs": [
-        { "label": "Contenu", "value": "3 fusées" }
-      ],
-      "art": { "hue": 190, "hue2": 330 }
-    },
-    {
-      "slug": "chandelle-cascade-10",
-      "name": "Chandelle Cascade",
-      "category": "chandelles-romaines",
-      "price": 12.9,
-      "availability": "in_stock",
-      "isNew": true,
-      "summary": "Chandelle romaine de démonstration, dix bombettes successives.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
-      "regulatory": { "class": "F2", "minAge": 16, "nec": 60, "ceRef": null, "manufacturer": null },
-      "specs": [
-        { "label": "Nombre de coups", "value": "10" }
-      ],
-      "art": { "hue": 330, "hue2": 50 }
-    },
-    {
-      "slug": "chandelles-duo-lot-4",
-      "name": "Chandelles Duo — lot de 4",
-      "category": "chandelles-romaines",
-      "price": 29,
-      "availability": "in_stock",
       "featured": true,
-      "summary": "Lot de démonstration de quatre chandelles aux couleurs alternées.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
-      "regulatory": { "class": "F2", "minAge": 16, "nec": 220, "ceRef": null, "manufacturer": null },
+      "summary": "paquet de 4 fumigènes multi couleurs.",
+      "description": "paquet de 4 fumigènes multi couleurs.\n\n4 couleurs différentes:\n\nVert\nJaune\nBleu\nRouge",
+      "features": [],
+      "regulatory": {
+        "class": null,
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
       "specs": [
-        { "label": "Contenu", "value": "4 chandelles" }
+        {
+          "label": "Contenu",
+          "value": "4 fumigènes"
+        },
+        {
+          "label": "Couleurs",
+          "value": "Vert, jaune, bleu, rouge"
+        }
       ],
-      "art": { "hue": 120, "hue2": 300 }
+      "image": "/assets/img/produits/paquet-de-4-fumigenes-multi-couleurs.webp",
+      "thumb": "/assets/img/produits/paquet-de-4-fumigenes-multi-couleurs-480.webp",
+      "imageBg": "#fffdf9",
+      "source": "https://ehshop.net/product/paquet-de-4-fumigenes-multi-couleurs"
     },
     {
-      "slug": "fontaine-sirocco",
-      "name": "Fontaine Sirocco",
-      "category": "fontaines-effets-sol",
-      "price": 9.9,
+      "slug": "torche",
+      "name": "Torche pyrotechnique 60 s",
+      "category": "fumigenes-torches",
+      "price": 12.0,
       "availability": "in_stock",
-      "featured": true,
-      "summary": "Fontaine de démonstration, gerbe dorée posée au sol.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
-      "regulatory": { "class": "F2", "minAge": 16, "nec": 50, "ceRef": null, "manufacturer": null },
+      "featured": false,
+      "summary": "Torche pyrotechnique d'une durée d'environ 60 secondes : un effet lumineux qui dure, pour photos, fêtes et événements. Vente réservée aux plus de 18 ans.",
+      "description": "Cette torche brûle environ 60 secondes. Tenez-la à bout de bras, flamme vers le haut et loin du visage, ou fixez-la sur un support stable. Utilisez-la en extérieur, loin des matières inflammables, et laissez-la refroidir avant de la jeter. Vente réservée aux plus de 18 ans.",
+      "features": [],
+      "regulatory": {
+        "class": null,
+        "minAge": 18,
+        "nec": null,
+        "ceRef": null,
+        "manufacturer": null
+      },
       "specs": [
-        { "label": "Durée indicative", "value": "40 s" }
+        {
+          "label": "Durée approximative",
+          "value": "60 s"
+        }
       ],
-      "art": { "hue": 42, "hue2": 20 }
+      "image": "/assets/img/produits/torche.webp",
+      "thumb": "/assets/img/produits/torche-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/torche"
     },
     {
-      "slug": "fontaines-lot-3-prisme",
-      "name": "Fontaines Prisme — lot de 3",
-      "category": "fontaines-effets-sol",
-      "price": 19.9,
+      "slug": "rhinofire-controleur-pyrotechnique-declencheur-de-sequenceur-a-1-coup",
+      "name": "RhinoFire — contrôleur de tir 1 coup",
+      "category": "systemes-de-tir",
+      "price": 190.0,
       "availability": "in_stock",
-      "isNew": true,
-      "summary": "Lot de démonstration de trois fontaines colorées.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
-      "regulatory": { "class": "F2", "minAge": 16, "nec": 120, "ceRef": null, "manufacturer": null },
-      "specs": [
-        { "label": "Contenu", "value": "3 fontaines" }
+      "featured": false,
+      "summary": "Contrôleur/séquenceur pyrotechnique RhinoFire 1 Shot",
+      "description": "Unité de déclenchement pour le séquenceur de feux d'artifice RhinoFire. Elle permet de démarrer le séquenceur sur un fil de tir allant jusqu'à 500 m.",
+      "features": [
+        "Testeur de continuité intégré avec LED rouge vif",
+        "Interrupteur d'armement à clé avec 2 clés métalliques",
+        "Bouton d'allumage/démarrage de haute qualité",
+        "Bornes à vis de haute qualité pour la connexion des fils",
+        "Boîtier en plastique ABS haute visibilité, solide et durable",
+        "Alimenté par une pile standard de 9 V"
       ],
-      "art": { "hue": 160, "hue2": 330 }
-    },
-    {
-      "slug": "cierges-magiques-lot-10",
-      "name": "Cierges magiques — lot de 10",
-      "category": "petits-artifices",
-      "price": 4.5,
-      "availability": "in_stock",
-      "featured": true,
-      "summary": "Lot de démonstration de cierges magiques classiques.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
-      "regulatory": { "class": "F1", "minAge": 12, "nec": 10, "ceRef": null, "manufacturer": null },
-      "specs": [
-        { "label": "Contenu", "value": "10 cierges" }
-      ],
-      "art": { "hue": 50, "hue2": 40 }
-    },
-    {
-      "slug": "effets-de-table-assortiment",
-      "name": "Effets de table — assortiment",
-      "category": "petits-artifices",
-      "price": 7.9,
-      "availability": "in_stock",
-      "summary": "Assortiment de démonstration d'articles de table de catégorie F1.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
-      "regulatory": { "class": "F1", "minAge": 12, "nec": 5, "ceRef": null, "manufacturer": null },
-      "specs": [],
-      "art": { "hue": 300, "hue2": 200 }
-    },
-    {
-      "slug": "allumeurs-lot-5",
-      "name": "Allumeurs — lot de 5",
-      "category": "accessoires",
-      "price": 3.9,
-      "availability": "in_stock",
-      "summary": "Accessoire de démonstration pour allumer à distance de la mèche.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
-      "regulatory": null,
-      "specs": [
-        { "label": "Contenu", "value": "5 allumeurs" }
-      ],
-      "art": { "hue": 20, "hue2": 210 }
-    },
-    {
-      "slug": "lunettes-de-protection",
-      "name": "Lunettes de protection",
-      "category": "accessoires",
-      "price": 8.5,
-      "availability": "in_stock",
-      "summary": "Accessoire de démonstration : protection oculaire pour la personne qui allume.",
-      "description": "Fiche de démonstration. Remplacez ce texte par la description réelle.",
       "regulatory": null,
       "specs": [],
-      "art": { "hue": 210, "hue2": 190 }
+      "image": "/assets/img/produits/rhinofire-controleur-pyrotechnique-declencheur-de-sequenceur-a-1-coup.webp",
+      "thumb": "/assets/img/produits/rhinofire-controleur-pyrotechnique-declencheur-de-sequenceur-a-1-coup-480.webp",
+      "imageBg": "#e9eaec",
+      "source": "https://ehshop.net/product/rhinofire-controleur-pyrotechnique-declencheur-de-sequenceur-a-1-coup"
+    },
+    {
+      "slug": "film-adhesif-du-ruban-d-emballage-transparent",
+      "name": "Ruban adhésif d'emballage transparent 50 m × 48 mm",
+      "category": "accessoires",
+      "price": 1.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Film adhésif du ruban d'emballage transparent 50mx48mm",
+      "description": "Film adhésif du ruban d'emballage transparent 50mx48mm",
+      "features": [],
+      "regulatory": null,
+      "specs": [],
+      "image": "/assets/img/produits/film-adhesif-du-ruban-d-emballage-transparent.webp",
+      "thumb": "/assets/img/produits/film-adhesif-du-ruban-d-emballage-transparent-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/film-adhesif-du-ruban-d-emballage-transparent"
+    },
+    {
+      "slug": "ruban-adhesif-ruban-demballage-50mx48mm-marron",
+      "name": "Ruban adhésif d'emballage marron 50 m × 48 mm",
+      "category": "accessoires",
+      "price": 1.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Ruban adhésif d'emballage marron 50 m x 48 mm, épaisseur 23 µm, pour fermer cartons, colis et déménagements. Commandez en ligne, livraison en France.",
+      "description": "Ruban adhésif d'emballage marron, rouleau de 50 m en 48 mm, épaisseur 23 µm. Doublez la bande sur les cartons lourds pour une fermeture solide. Stockez à l'abri de la chaleur.",
+      "features": [],
+      "regulatory": null,
+      "specs": [],
+      "image": "/assets/img/produits/ruban-adhesif-ruban-demballage-50mx48mm-marron.webp",
+      "thumb": "/assets/img/produits/ruban-adhesif-ruban-demballage-50mx48mm-marron-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/ruban-adhesif-ruban-demballage-50mx48mm-marron"
+    },
+    {
+      "slug": "trousse-de-secours",
+      "name": "Trousse de secours",
+      "category": "accessoires",
+      "price": 2.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Trousse de secours compacte : compresse, sangle de fixation et plus de 40 pansements de tailles variées pour les petits bobos. Commandez en ligne.",
+      "description": "- Cette trousse compacte comprend 1 compresse 76 x 50 mm, 1 sangle de fixation, 1 pansement 100 x 50 mm et 40 pansements de quatre formats. Elle tient facilement dans une boîte à gants ou un sac. Nettoyez la plaie avant d'appliquer un pansement et consultez un professionnel si elle est profonde.",
+      "features": [],
+      "regulatory": null,
+      "specs": [],
+      "image": "/assets/img/produits/trousse-de-secours.webp",
+      "thumb": "/assets/img/produits/trousse-de-secours-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/trousse-de-secours"
+    },
+    {
+      "slug": "trousse-de-premier-secours",
+      "name": "Trousse de premier secours",
+      "category": "accessoires",
+      "price": 10.0,
+      "availability": "in_stock",
+      "featured": false,
+      "summary": "Trousse de premier secours complète : pansements, bandes, compresses, sparadrap, ciseaux, pince à épiler et épingles. Commandez en ligne, livraison en France.",
+      "description": "Cette trousse contient notamment des pansements, des bandes de plâtre, 2 compresses non stériles, 2 bandes de gaze, un sparadrap, des ciseaux, une pince à épiler, 6 épingles de sûreté et un chiffon triangulaire. Gardez-la à portée de main lors de vos sorties et vérifiez son contenu régulièrement. En cas de blessure grave ou de brûlure étendue, appelez le 15 ou le 112.",
+      "features": [],
+      "regulatory": null,
+      "specs": [],
+      "image": "/assets/img/produits/trousse-de-premier-secours.webp",
+      "thumb": "/assets/img/produits/trousse-de-premier-secours-480.webp",
+      "imageBg": "#ffffff",
+      "source": "https://ehshop.net/product/trousse-de-premier-secours"
     }
   ]
 }

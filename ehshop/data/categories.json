@@ -1,44 +1,53 @@
 [
   {
-    "slug": "compacts-batteries",
-    "name": "Compacts & batteries",
-    "short": "Compacts",
-    "description": "Des feux d'artifice en un seul allumage : une mèche, une séquence complète.",
-    "art": { "hue": 28, "style": "burst" }
+    "slug": "feux-d-artifice",
+    "name": "Feux d'artifice",
+    "short": "Feux d'artifice",
+    "description": "Compacts et batteries F2 et F3 : une seule mèche, tout le bouquet s'enchaîne.",
+    "image": "/assets/img/produits/inferno-480.webp",
+    "imageBg": "#ffffff",
+    "budgets": true
   },
   {
-    "slug": "fusees",
-    "name": "Fusées",
-    "short": "Fusées",
-    "description": "Montée en altitude et éclatement dans le ciel, pour les grands espaces dégagés.",
-    "art": { "hue": 8, "style": "rocket" }
+    "slug": "petards",
+    "name": "Pétards",
+    "short": "Pétards",
+    "description": "Paquets, sachets assortis et pétards puissants F3 pour les amateurs de détonations.",
+    "image": "/assets/img/produits/sachet-petard-demon-maxi-cool-480.webp"
   },
   {
-    "slug": "chandelles-romaines",
-    "name": "Chandelles romaines",
+    "slug": "fusees-packs",
+    "name": "Fusées & packs",
+    "short": "Fusées & packs",
+    "description": "Lots de fusées et ensembles prêts pour la fête, avec un peu de tout.",
+    "image": "/assets/img/produits/4-9-3-f2-ensemble-480.webp"
+  },
+  {
+    "slug": "chandelles-monocoups",
+    "name": "Chandelles & monocoups",
     "short": "Chandelles",
-    "description": "Une succession de bombettes tirées à la verticale, coup après coup.",
-    "art": { "hue": 340, "style": "candle" }
+    "description": "Chandelles romaines et monocoups de gros calibre pour un départ ou un final.",
+    "image": "/assets/img/produits/monocoup-1-480.webp"
   },
   {
-    "slug": "fontaines-effets-sol",
-    "name": "Fontaines & effets au sol",
-    "short": "Fontaines",
-    "description": "Gerbes, étincelles et effets posés au sol, à regarder de près.",
-    "art": { "hue": 44, "style": "fountain" }
+    "slug": "fumigenes-torches",
+    "name": "Fumigènes & torches",
+    "short": "Fumigènes",
+    "description": "Fumées colorées et torches lumineuses pour les photos, les supporters et les fêtes.",
+    "image": "/assets/img/produits/paquet-de-4-fumigenes-multi-couleurs-480.webp"
   },
   {
-    "slug": "petits-artifices",
-    "name": "Petits artifices",
-    "short": "Petits artifices",
-    "description": "Cierges magiques, effets de table et articles de catégorie F1.",
-    "art": { "hue": 52, "style": "sparkler" }
+    "slug": "systemes-de-tir",
+    "name": "Systèmes de tir",
+    "short": "Systèmes de tir",
+    "description": "Matériel de mise à feu à distance pour tirer en gardant ses distances.",
+    "image": "/assets/img/produits/rhinofire-controleur-pyrotechnique-declencheur-de-sequenceur-a-1-coup-480.webp"
   },
   {
     "slug": "accessoires",
-    "name": "Accessoires & sécurité",
+    "name": "Sécurité & accessoires",
     "short": "Accessoires",
-    "description": "Allumage, protection et matériel pour tirer dans de bonnes conditions.",
-    "art": { "hue": 210, "style": "gear" }
+    "description": "Trousses de secours et fournitures utiles autour du tir.",
+    "image": "/assets/img/produits/trousse-de-premier-secours-480.webp"
   }
 ]

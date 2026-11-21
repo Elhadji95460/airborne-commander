@@ -1,24 +1,28 @@
 {
-  "_comment": "Toutes les valeurs null sont à compléter avec les informations réelles de l'entreprise. Le build liste ce qui manque. Aucune valeur ne doit être inventée.",
+  "_comment": "Informations reprises des pages publiées sur ehshop.net (mentions légales et CGV du 31/10/2026). Les valeurs null restent à compléter : le build les signale.",
 
   "brand": {
     "name": "EHSHOP",
-    "tagline": "Artifices & pyrotechnie de loisir",
+    "tagline": "Feux d'artifice, pétards et fumigènes",
     "baseUrl": "https://ehshop.net",
     "locale": "fr_FR",
-    "currency": "EUR"
+    "currency": "EUR",
+    "productBrand": "Kimplex"
   },
 
   "company": {
-    "legalName": null,
-    "legalForm": null,
-    "shareCapital": null,
-    "siret": null,
-    "rcs": null,
-    "vatNumber": null,
-    "address": null,
-    "publicationDirector": null,
+    "legalName": "EK",
+    "legalForm": "SAS",
+    "shareCapital": "120 €",
+    "siren": "939 694 014",
+    "siret": "939 694 014 00019",
+    "rcs": "RCS Paris",
+    "ape": "46.49Z",
+    "vatNumber": "FR57939694014",
+    "address": "59 rue de Ponthieu, 75008 Paris, France",
+    "publicationDirector": "Le représentant légal de la société EK",
     "host": {
+      "_comment": "À mettre à jour lors du changement d'hébergeur (actuellement : hébergement SumUp sur Amazon Web Services).",
       "name": null,
       "address": null,
       "phone": null
@@ -26,29 +30,44 @@
   },
 
   "contact": {
-    "email": null,
-    "phone": null,
+    "email": "kimplex.pyro@ehshop.net",
+    "phone": "01 88 73 20 32",
     "hours": null,
     "pickupAddress": null
   },
 
   "policy": {
-    "_comment": "Âge minimum exigé par la boutique pour passer commande, toutes catégories confondues. La réglementation fixe des minimums par catégorie (voir page Réglementation) ; la boutique peut être plus stricte.",
     "minimumBuyerAge": 18,
-    "deliveryModes": [],
-    "deliveryZones": null,
-    "deliveryDelay": null,
-    "shippingCostInfo": null,
-    "paymentMethods": [],
-    "returnsInfo": null
+    "shippingZones": [
+      { "id": "fr", "label": "France métropolitaine", "price": 10 },
+      { "id": "ue", "label": "Autre pays de l'Union européenne", "price": 25 },
+      { "id": "ca-us", "label": "Canada et États-Unis", "price": null, "priceText": "39,29 US$ (converti en euros au paiement)" }
+    ],
+    "carrierInfo": "Transporteur habilité au transport des marchandises dangereuses (ADR, classe 1). Pas d'envoi par La Poste ni en point relais.",
+    "preparationDelay": "5 à 10 jours ouvrés après réception du paiement (indicatif), plus le délai d'acheminement du transporteur.",
+    "paymentMethods": ["Carte bancaire via SumUp (paiement sécurisé)", "Virement bancaire"],
+    "returnCostInfo": "Retour à la charge du client, par transporteur habilité ADR uniquement : environ 40 à 130 € TTC pour un colis jusqu'à 30 kg en France métropolitaine (indicatif).",
+    "mediator": { "name": "Centre de Médiation de la Consommation des Conciliateurs de justice (CM2C)", "address": "49 rue de Ponthieu, 75008 Paris", "url": "https://www.cm2c.net" }
+  },
+
+  "regulatoryNotice": {
+    "_comment": "Restriction temporaire nationale. Le bandeau et le blocage des commandes s'arrêtent automatiquement après 'until' (heure de Paris). Vérifier le texte officiel sur Légifrance avant publication. Les fumigènes et torches sont inclus par prudence (catégorie non indiquée sur les fiches) : les retirer de la liste s'ils sont de catégorie F1.",
+    "active": true,
+    "reference": "Décret n° 2026-1047 du 14 novembre 2026",
+    "from": "2026-11-15",
+    "until": "2026-11-27",
+    "resume": "2026-11-28",
+    "summary": "La vente et l'utilisation de certains artifices F2 et F3 (compacts, batteries, fusées, chandelles, monocoups, pétards) sont suspendues en France jusqu'au 27 novembre 2026 inclus.",
+    "affectedCategories": ["feux-d-artifice", "petards", "fusees-packs", "chandelles-monocoups", "fumigenes-torches"]
   },
 
   "order": {
-    "_comment": "Point d'envoi des demandes de commande (POST JSON). Laisser null : la commande est alors préparée sous forme d'e-mail au service client. Brancher ici un back-office ou un prestataire de paiement (Stripe, PayPal, Shopify Buy Button…).",
+    "_comment": "Sans endpoint, la commande est préparée par e-mail au service client, qui renvoie un lien de paiement SumUp (CGV art. 5.2). Renseigner une URL pour envoyer la commande en POST JSON vers un back-office.",
     "endpoint": null
   },
 
   "social": {
+    "twitter": "https://twitter.com/ehshopehshop",
     "instagram": null,
     "facebook": null,
     "tiktok": null,

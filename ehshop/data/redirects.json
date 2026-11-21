@@ -1,1 +1,370 @@
-[]
+[
+ {
+  "from": "/product/inferno",
+  "to": "/produit/inferno/"
+ },
+ {
+  "from": "/article/inferno",
+  "to": "/produit/inferno/"
+ },
+ {
+  "from": "/product/tg240",
+  "to": "/produit/tg240/"
+ },
+ {
+  "from": "/article/tg240",
+  "to": "/produit/tg240/"
+ },
+ {
+  "from": "/product/congele",
+  "to": "/produit/congele/"
+ },
+ {
+  "from": "/article/congele",
+  "to": "/produit/congele/"
+ },
+ {
+  "from": "/product/gugus",
+  "to": "/produit/gugus/"
+ },
+ {
+  "from": "/article/gugus",
+  "to": "/produit/gugus/"
+ },
+ {
+  "from": "/product/macrocosmos",
+  "to": "/produit/macrocosmos/"
+ },
+ {
+  "from": "/article/macrocosmos",
+  "to": "/produit/macrocosmos/"
+ },
+ {
+  "from": "/product/major",
+  "to": "/produit/major/"
+ },
+ {
+  "from": "/article/major",
+  "to": "/produit/major/"
+ },
+ {
+  "from": "/product/mars",
+  "to": "/produit/mars/"
+ },
+ {
+  "from": "/article/mars",
+  "to": "/produit/mars/"
+ },
+ {
+  "from": "/product/optic",
+  "to": "/produit/optic/"
+ },
+ {
+  "from": "/article/optic",
+  "to": "/produit/optic/"
+ },
+ {
+  "from": "/product/shark-attack",
+  "to": "/produit/shark-attack/"
+ },
+ {
+  "from": "/article/shark-attack",
+  "to": "/produit/shark-attack/"
+ },
+ {
+  "from": "/product/hnusak",
+  "to": "/produit/hnusak/"
+ },
+ {
+  "from": "/article/hnusak",
+  "to": "/produit/hnusak/"
+ },
+ {
+  "from": "/product/magic",
+  "to": "/produit/magic/"
+ },
+ {
+  "from": "/article/magic",
+  "to": "/produit/magic/"
+ },
+ {
+  "from": "/product/pyro-zone",
+  "to": "/produit/pyro-zone/"
+ },
+ {
+  "from": "/article/pyro-zone",
+  "to": "/produit/pyro-zone/"
+ },
+ {
+  "from": "/product/illusion",
+  "to": "/produit/illusion/"
+ },
+ {
+  "from": "/article/illusion",
+  "to": "/produit/illusion/"
+ },
+ {
+  "from": "/product/born-to-rock",
+  "to": "/produit/born-to-rock/"
+ },
+ {
+  "from": "/article/born-to-rock",
+  "to": "/produit/born-to-rock/"
+ },
+ {
+  "from": "/product/thunder-king",
+  "to": "/produit/thunder-king/"
+ },
+ {
+  "from": "/article/thunder-king",
+  "to": "/produit/thunder-king/"
+ },
+ {
+  "from": "/product/gamme-signature",
+  "to": "/produit/gamme-signature/"
+ },
+ {
+  "from": "/article/gamme-signature",
+  "to": "/produit/gamme-signature/"
+ },
+ {
+  "from": "/product/revolt",
+  "to": "/produit/revolt/"
+ },
+ {
+  "from": "/article/revolt",
+  "to": "/produit/revolt/"
+ },
+ {
+  "from": "/product/jazz-and-blues",
+  "to": "/produit/jazz-and-blues/"
+ },
+ {
+  "from": "/article/jazz-and-blues",
+  "to": "/produit/jazz-and-blues/"
+ },
+ {
+  "from": "/product/balle-explosive-dumbum",
+  "to": "/produit/balle-explosive-dumbum/"
+ },
+ {
+  "from": "/article/balle-explosive-dumbum",
+  "to": "/produit/balle-explosive-dumbum/"
+ },
+ {
+  "from": "/product/dumbum-f3",
+  "to": "/produit/dumbum-f3/"
+ },
+ {
+  "from": "/article/dumbum-f3",
+  "to": "/produit/dumbum-f3/"
+ },
+ {
+  "from": "/product/bull-dog-1",
+  "to": "/produit/bull-dog-1/"
+ },
+ {
+  "from": "/article/bull-dog-1",
+  "to": "/produit/bull-dog-1/"
+ },
+ {
+  "from": "/product/paquet-de-20-petards",
+  "to": "/produit/paquet-de-20-petards/"
+ },
+ {
+  "from": "/article/paquet-de-20-petards",
+  "to": "/produit/paquet-de-20-petards/"
+ },
+ {
+  "from": "/product/sachet-petard-demon-cool-selection",
+  "to": "/produit/sachet-petard-demon-cool-selection/"
+ },
+ {
+  "from": "/article/sachet-petard-demon-cool-selection",
+  "to": "/produit/sachet-petard-demon-cool-selection/"
+ },
+ {
+  "from": "/product/sachet-petard-demon-maxi-cool",
+  "to": "/produit/sachet-petard-demon-maxi-cool/"
+ },
+ {
+  "from": "/article/sachet-petard-demon-maxi-cool",
+  "to": "/produit/sachet-petard-demon-maxi-cool/"
+ },
+ {
+  "from": "/product/dumbum-5g",
+  "to": "/produit/dumbum-5g/"
+ },
+ {
+  "from": "/article/dumbum-5g",
+  "to": "/produit/dumbum-5g/"
+ },
+ {
+  "from": "/product/jouons-a-l-ensemble",
+  "to": "/produit/jouons-a-l-ensemble/"
+ },
+ {
+  "from": "/article/jouons-a-l-ensemble",
+  "to": "/produit/jouons-a-l-ensemble/"
+ },
+ {
+  "from": "/product/4-9-3-f2-ensemble",
+  "to": "/produit/4-9-3-f2-ensemble/"
+ },
+ {
+  "from": "/article/4-9-3-f2-ensemble",
+  "to": "/produit/4-9-3-f2-ensemble/"
+ },
+ {
+  "from": "/product/fire-gate-rockets-5-pieces-f2",
+  "to": "/produit/fire-gate-rockets-5-pieces-f2/"
+ },
+ {
+  "from": "/article/fire-gate-rockets-5-pieces-f2",
+  "to": "/produit/fire-gate-rockets-5-pieces-f2/"
+ },
+ {
+  "from": "/product/monocoup",
+  "to": "/produit/monocoup/"
+ },
+ {
+  "from": "/article/monocoup",
+  "to": "/produit/monocoup/"
+ },
+ {
+  "from": "/product/paquet-de-3-chandelles-20-effets",
+  "to": "/produit/paquet-de-3-chandelles-20-effets/"
+ },
+ {
+  "from": "/article/paquet-de-3-chandelles-20-effets",
+  "to": "/produit/paquet-de-3-chandelles-20-effets/"
+ },
+ {
+  "from": "/product/paquets-de-10-chandelles-romaines-10-effets",
+  "to": "/produit/paquets-de-10-chandelles-romaines-10-effets/"
+ },
+ {
+  "from": "/article/paquets-de-10-chandelles-romaines-10-effets",
+  "to": "/produit/paquets-de-10-chandelles-romaines-10-effets/"
+ },
+ {
+  "from": "/product/monocoup-1",
+  "to": "/produit/monocoup-1/"
+ },
+ {
+  "from": "/article/monocoup-1",
+  "to": "/produit/monocoup-1/"
+ },
+ {
+  "from": "/product/paquet-de-4-fumigenes-multi-couleurs",
+  "to": "/produit/paquet-de-4-fumigenes-multi-couleurs/"
+ },
+ {
+  "from": "/article/paquet-de-4-fumigenes-multi-couleurs",
+  "to": "/produit/paquet-de-4-fumigenes-multi-couleurs/"
+ },
+ {
+  "from": "/product/torche",
+  "to": "/produit/torche/"
+ },
+ {
+  "from": "/article/torche",
+  "to": "/produit/torche/"
+ },
+ {
+  "from": "/product/rhinofire-controleur-pyrotechnique-declencheur-de-sequenceur-a-1-coup",
+  "to": "/produit/rhinofire-controleur-pyrotechnique-declencheur-de-sequenceur-a-1-coup/"
+ },
+ {
+  "from": "/article/rhinofire-controleur-pyrotechnique-declencheur-de-sequenceur-a-1-coup",
+  "to": "/produit/rhinofire-controleur-pyrotechnique-declencheur-de-sequenceur-a-1-coup/"
+ },
+ {
+  "from": "/product/film-adhesif-du-ruban-d-emballage-transparent",
+  "to": "/produit/film-adhesif-du-ruban-d-emballage-transparent/"
+ },
+ {
+  "from": "/article/film-adhesif-du-ruban-d-emballage-transparent",
+  "to": "/produit/film-adhesif-du-ruban-d-emballage-transparent/"
+ },
+ {
+  "from": "/product/ruban-adhesif-ruban-demballage-50mx48mm-marron",
+  "to": "/produit/ruban-adhesif-ruban-demballage-50mx48mm-marron/"
+ },
+ {
+  "from": "/article/ruban-adhesif-ruban-demballage-50mx48mm-marron",
+  "to": "/produit/ruban-adhesif-ruban-demballage-50mx48mm-marron/"
+ },
+ {
+  "from": "/product/trousse-de-secours",
+  "to": "/produit/trousse-de-secours/"
+ },
+ {
+  "from": "/article/trousse-de-secours",
+  "to": "/produit/trousse-de-secours/"
+ },
+ {
+  "from": "/product/trousse-de-premier-secours",
+  "to": "/produit/trousse-de-premier-secours/"
+ },
+ {
+  "from": "/article/trousse-de-premier-secours",
+  "to": "/produit/trousse-de-premier-secours/"
+ },
+ {
+  "from": "/catégorie/feux-d-artifice",
+  "to": "/categorie/feux-d-artifice/"
+ },
+ {
+  "from": "/catégorie/jusqu-a-13EUR",
+  "to": "/categorie/feux-d-artifice/?budget=0-13"
+ },
+ {
+  "from": "/catégorie/15-74-25-00-EUR-1",
+  "to": "/categorie/feux-d-artifice/?budget=13-25"
+ },
+ {
+  "from": "/catégorie/petard",
+  "to": "/categorie/petards/"
+ },
+ {
+  "from": "/catégorie/fusees-et-autres",
+  "to": "/categorie/fusees-packs/"
+ },
+ {
+  "from": "/catégorie/chandelles-1",
+  "to": "/categorie/chandelles-monocoups/"
+ },
+ {
+  "from": "/catégorie/fumigenes",
+  "to": "/categorie/fumigenes-torches/"
+ },
+ {
+  "from": "/catégorie/systemes-de-tir",
+  "to": "/categorie/systemes-de-tir/"
+ },
+ {
+  "from": "/produits",
+  "to": "/boutique/"
+ },
+ {
+  "from": "/page/mentions-l-gales",
+  "to": "/mentions-legales/"
+ },
+ {
+  "from": "/page/conditions-generales",
+  "to": "/cgv/"
+ },
+ {
+  "from": "/page/politique-en-matiere-de-protection-de-la-vie-privee",
+  "to": "/confidentialite/"
+ },
+ {
+  "from": "/politique-cookies",
+  "to": "/cookies/"
+ },
+ {
+  "from": "/catalogue",
+  "to": "/boutique/"
+ }
+]

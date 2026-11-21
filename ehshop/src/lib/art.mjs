@@ -1,5 +1,5 @@
-// Illustrations SVG générées (déterministes) utilisées tant qu'aucune photo réelle n'est fournie.
-// Elles restent volontairement abstraites : elles évoquent un effet, sans prétendre montrer le produit.
+// Illustrations SVG générées (déterministes) : décor du hero et image de partage.
+// Volontairement abstraites : elles évoquent un feu d'artifice sans représenter un produit.
 import { rng, esc } from './util.mjs';
 
 const f = (n) => Math.round(n * 10) / 10;
@@ -51,91 +51,6 @@ function stars(w, h, n, rand) {
 
 function wrap(w, h, label, defs, body) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="${esc(label)}"><defs>${defs}</defs>${body}</svg>`;
-}
-
-/** Scène d'une famille d'artifices, selon un style. */
-function scene({ w, h, hue, hue2, style, seed, label }) {
-  const rand = rng(seed);
-  const id = seed.replace(/[^a-z0-9]/gi, '').slice(0, 10);
-  gid = 0;
-  const bg = sky(w, h, id, hue);
-  let defs = bg.defs, body = bg.body + stars(w, h, 40, rand);
-  const add = (b) => { defs += b.defs; body += b.body; };
-  const ground = h * 0.92;
-
-  switch (style) {
-    case 'rocket': {
-      const x = w * (0.45 + rand() * 0.1), top = h * 0.3;
-      body += `<path d="M${f(x - 30)} ${f(ground)}Q${f(x - 10)} ${f(h * 0.6)} ${f(x)} ${f(top + 40)}" stroke="${hsl(hue, 90, 70, 0.55)}" stroke-width="2" fill="none" stroke-dasharray="2 7" stroke-linecap="round"/>`;
-      add(burst({ cx: x, cy: top, r: w * 0.3, hue, hue2, rays: 64, rand, id }));
-      add(burst({ cx: w * 0.2, cy: h * 0.22, r: w * 0.12, hue: hue2, hue2: hue, rays: 32, rand, id, width: 1.2 }));
-      break;
-    }
-    case 'candle': {
-      const x = w * 0.5;
-      body += `<rect x="${f(x - 9)}" y="${f(ground - 70)}" width="18" height="70" rx="3" fill="#1f1d24" stroke="${hsl(hue, 30, 35)}"/>`;
-      for (let i = 0; i < 6; i++) {
-        const y = ground - 110 - i * (h * 0.12);
-        const rr = 10 + i * 2.4;
-        body += `<circle cx="${f(x + (rand() - 0.5) * 30)}" cy="${f(y)}" r="${f(rr)}" fill="${hsl(i % 2 ? hue : hue2, 95, 62, 0.9)}"/>`
-          + `<circle cx="${f(x)}" cy="${f(y)}" r="${f(rr * 3)}" fill="${hsl(i % 2 ? hue : hue2, 95, 60, 0.08)}"/>`;
-      }
-      break;
-    }
-    case 'fountain': {
-      const x = w * 0.5;
-      let p = '';
-      for (let i = 0; i < 90; i++) {
-        const a = -Math.PI / 2 + (rand() - 0.5) * 1.1;
-        const len = h * (0.3 + rand() * 0.38);
-        const x1 = x + Math.cos(a) * len, y1 = ground + Math.sin(a) * len;
-        const fall = x1 + (x1 - x) * 0.5, fy = y1 + len * 0.35;
-        p += `M${f(x)} ${f(ground - 30)}Q${f(x1)} ${f(y1)} ${f(fall)} ${f(fy)}`;
-      }
-      defs += `<linearGradient id="${id}fg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="${hsl(hue, 100, 92)}"/><stop offset=".5" stop-color="${hsl(hue, 95, 62, 0.8)}"/><stop offset="1" stop-color="${hsl(hue2, 90, 50, 0)}"/></linearGradient>`;
-      body += `<path d="${p}" stroke="url(#${id}fg)" stroke-width="1.1" fill="none" opacity=".9"/>`
-        + `<path d="M${f(x - 28)} ${f(ground)}L${f(x - 18)} ${f(ground - 32)}H${f(x + 18)}L${f(x + 28)} ${f(ground)}Z" fill="#1f1d24" stroke="${hsl(hue, 30, 35)}"/>`;
-      break;
-    }
-    case 'sparkler': {
-      const x0 = w * 0.32, y0 = h * 0.85, x1 = w * 0.6, y1 = h * 0.38;
-      body += `<line x1="${x0}" y1="${y0}" x2="${f(x1)}" y2="${f(y1)}" stroke="#55505e" stroke-width="5" stroke-linecap="round"/>`;
-      add(burst({ cx: x1, cy: y1, r: w * 0.22, hue, hue2, rays: 90, rand, id, droop: 0.04, width: 0.9 }));
-      break;
-    }
-    case 'gear': {
-      const cx = w / 2, cy = h * 0.48;
-      for (let i = 0; i < 5; i++) {
-        body += `<circle cx="${cx}" cy="${f(cy)}" r="${f(w * (0.08 + i * 0.07))}" fill="none" stroke="${hsl(i % 2 ? hue : hue2, 40, 60, 0.5 - i * 0.07)}" stroke-width="${i === 0 ? 3 : 1}"/>`;
-      }
-      body += `<circle cx="${cx}" cy="${f(cy)}" r="6" fill="${hsl(hue2, 90, 65)}"/>`;
-      add(burst({ cx, cy, r: w * 0.1, hue: hue2, hue2: hue, rays: 24, rand, id, droop: 0, width: 1 }));
-      break;
-    }
-    default: { // burst / compacts
-      add(burst({ cx: w * 0.5, cy: h * 0.36, r: w * 0.3, hue, hue2, rays: 72, rand, id }));
-      add(burst({ cx: w * 0.2, cy: h * 0.5, r: w * 0.14, hue: hue2, hue2: hue, rays: 36, rand, id, width: 1.2 }));
-      add(burst({ cx: w * 0.82, cy: h * 0.25, r: w * 0.12, hue: hue + 20, hue2, rays: 30, rand, id, width: 1.1 }));
-      for (let i = 0; i < 7; i++) {
-        const x = w * (0.2 + i * 0.1);
-        body += `<line x1="${f(x)}" y1="${f(ground)}" x2="${f(w * 0.5 + (x - w * 0.5) * 0.3)}" y2="${f(h * 0.45)}" stroke="${hsl(hue, 90, 70, 0.18)}" stroke-width="1.2" stroke-dasharray="1 9"/>`;
-      }
-    }
-  }
-  body += `<rect y="${f(ground)}" width="${w}" height="${f(h - ground)}" fill="#09090c"/>`;
-  return wrap(w, h, label, defs, body);
-}
-
-const STYLE_BY_CATEGORY = (cats) => Object.fromEntries(cats.map((c) => [c.slug, c.art]));
-
-export function categoryArt(cat) {
-  return scene({ w: 800, h: 1000, hue: cat.art.hue, hue2: cat.art.hue + 30, style: cat.art.style, seed: `cat-${cat.slug}`, label: `Illustration : ${cat.name}` });
-}
-
-export function productArt(p, cats) {
-  const style = STYLE_BY_CATEGORY(cats)[p.category]?.style ?? 'burst';
-  const a = p.art ?? { hue: 30, hue2: 10 };
-  return scene({ w: 800, h: 800, hue: a.hue, hue2: a.hue2 ?? a.hue + 30, style, seed: `p-${p.slug}`, label: `Illustration : ${p.name}` });
 }
 
 /** Composition du hero : plusieurs éclatements animables en CSS (classe .burst). */

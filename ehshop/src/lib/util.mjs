@@ -45,7 +45,7 @@ export function rng(seedStr) {
 export const AVAILABILITY = {
   in_stock: { label: 'En stock', tone: 'ok', schema: 'https://schema.org/InStock', orderable: true },
   low_stock: { label: 'Stock limité', tone: 'warn', schema: 'https://schema.org/LimitedAvailability', orderable: true },
-  out_of_stock: { label: 'Indisponible', tone: 'off', schema: 'https://schema.org/OutOfStock', orderable: false },
+  out_of_stock: { label: 'Épuisé', tone: 'off', schema: 'https://schema.org/OutOfStock', orderable: false },
   preorder: { label: 'Sur commande', tone: 'info', schema: 'https://schema.org/PreOrder', orderable: true },
 };
 
@@ -58,3 +58,31 @@ export const REG_CLASSES = {
   T1: { age: 18, distance: null, label: 'Articles pyrotechniques destinés au théâtre, danger faible' },
   P1: { age: 18, distance: null, label: 'Autres articles pyrotechniques, danger faible' },
 };
+
+/** Valeur d'une caractéristique produit par libellé. */
+export const spec = (p, label) => p.specs?.find((s) => s.label === label)?.value ?? null;
+
+/** Résumé court des caractéristiques clés (« 25 coups · 20 mm · 25 s »), uniquement à partir des données réelles. */
+export function keySpecs(p) {
+  const out = [];
+  const coups = spec(p, 'Nombre de coups');
+  const cal = spec(p, 'Calibre');
+  const dur = spec(p, 'Durée approximative');
+  if (coups) out.push(`${coups} coups`);
+  if (cal) out.push(cal);
+  if (dur) out.push(`≈ ${dur}`);
+  if (!out.length) { const c = spec(p, 'Contenu'); if (c) out.push(c.length > 34 ? `${c.slice(0, 32)}…` : c); }
+  return out;
+}
+
+/** Calibre principal en mm (nombre) ou null. */
+export const calibreMm = (p) => { const c = spec(p, 'Calibre'); return c ? parseFloat(c.replace(',', '.')) : null; };
+
+/** Prix au coup, pour les compacts dont le nombre de coups est connu. */
+export const pricePerShot = (p) => { const c = parseInt(spec(p, 'Nombre de coups'), 10); return c > 1 ? p.price / c : null; };
+
+/** Le produit est-il concerné par la restriction réglementaire temporaire configurée ? */
+export const isRestricted = (p, site) => !!(site.regulatoryNotice?.active && site.regulatoryNotice.affectedCategories?.includes(p.category));
+
+export const frDate = (iso) => new Date(`${iso}T12:00:00`).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+export const frDateShort = (iso) => new Date(`${iso}T12:00:00`).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit' });
